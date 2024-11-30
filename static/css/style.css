@@ -1,0 +1,100 @@
+/* Ümumi sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Bütün səhifə */
+body.weather-body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Weather container (hava məlumatlarının yerləşdiyi qutu) */
+.weather-container {
+    background-color: rgba(87, 83, 83, 0.3); /* Transparan boz fon */
+    border-radius: 30px; /* Daha böyük radius */
+    padding: 70px;
+    width: 350px; /* Daha geniş ölçü */
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Daha böyük shadow */
+    opacity: 0.85; /* Daha şəffaf fon */
+    transition: all 0.3s ease; /* Yumuşaq keçid */
+}
+
+/* Box hover effekti */
+.weather-container:hover {
+    opacity: 1; /* Hover zamanı opacity tamamilə şaffaf olur */
+}
+h1 {
+    font-size: 24px;
+    color: #333;
+    display: inline-flex; /* Bu, h1 və img elementlərini yanaşı düzəcək */
+    align-items: center; /* Şəkili və yazını vertikal mərkəzlər */
+    margin-bottom: 20px;
+}
+
+img {
+    width: 30px; /* Şəkilin ölçüsünü uyğunlaşdırır */
+    height: auto; /* Şəkilin nisbətini qoruyur */
+    margin-left: 10px; /* Başlıq ilə şəkil arasındakı boşluğu artırır */
+    vertical-align: middle; /* Şəkil ilə başlıq eyni sətirdə ortalanır */
+}
+
+h2, p {
+    text-transform: capitalize; /* Hər sözün ilk hərfini böyük edir */
+}
+
+/* Input sahəsi */
+input[type="text"] {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #0072ff;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Input arxa fonu */
+}
+
+/* Button (düymə) */
+button {
+    padding: 12px 25px;
+    cursor: pointer;
+    background-color: #b8bbbd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #525559;
+}
+
+/* Weather məlumatları */
+#weather-info {
+    margin-top: 30px;
+    display: block;
+}
+
+#weather-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#weather-info p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 15px; /* Yazılar arasında daha çox boşluq */
+}
